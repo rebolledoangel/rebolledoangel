@@ -92,7 +92,4 @@ echo $mydog->makesound2();
 $mycat=new Cat2('Minino');
 echo $mycat->makesound2();
 
-
-
-
 ?>
