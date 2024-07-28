@@ -34,9 +34,31 @@ class Dog extends Animal{
     echo $this->name . ' does not like '
   }
 }
+
 echo '------INHERITANCE------';
 $mydog=new Dog('Princess');
 $mydog->makesound(). $mydog->dogName;
+
+//POLYMORPHISM
+
+class Shape{
+  public function draw(){
+    echo 'Drawing a shape';
+  }
+}
+
+class Circle extends Shape{
+  public function draw(){
+    echo 'Drawing Circle';
+  }
+}
+
+class Square extends Shape{
+  public function draw(){
+    echo 'Drawing Square';
+  }
+}
+
 
 //ABSTRACTION
 abstract class Animal(){
@@ -62,6 +84,8 @@ class Cat extends Animal{
 }
 $mydog=new Dog('Princess');
 echo 'My dog '.$mydog->name.' does not like '. $mydog->makesound();
+
+
 
 
 ?>
