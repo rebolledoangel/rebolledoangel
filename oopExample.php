@@ -59,26 +59,30 @@ class Square extends Shape{
   }
 }
 
+function drawShape(Shape $myshape){
+  $myshape->draw();
+}
+
 
 //ABSTRACTION
 abstract class Animal(){
-  protected $name;
+  protected $animalName;
 
-  public function __contruct($name){
-    $this->name=$name;
+  public function __contruct($animalName){
+    $this->name=$animalName;
   }
 
-  abstract public fucntion makeSound();
+  abstract public fucntion makeSound2();
 }
 
 class Dog extends Animal{
-  public function makeSound(){
-    return 'Bark';
+  public function makeSound2(){
+    echo $this->animalName ' Make this sound Bark';
   }
 }
 
 class Cat extends Animal{
-  public function makeSound(){
+  public function makeSound2(){
     return 'Meow';
   }
 }
