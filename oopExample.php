@@ -1,6 +1,6 @@
 <?php
 //OOP BASIC EXAMPLE;
-//ENCAPSULATION
+echo '------ENCAPSULATION------';
 class Car{
   private $color;
   public function setColor($color){
@@ -16,7 +16,7 @@ $myCar=new Car();
 $mycar->setColor('Red and Blue');
 echo 'The car color is: '. $mycar->getColor();
 
-//INHERITANCE
+echo '------INHERITANCE------';
 class Animal{
   protected $name;
 
@@ -35,12 +35,10 @@ class Dog extends Animal{
   }
 }
 
-echo '------INHERITANCE------';
 $mydog=new Dog('Princess');
 $mydog->makesound(). $mydog->dogName;
 
-//POLYMORPHISM
-
+echo '------POLYMORPHISM------';
 class Shape{
   public function draw(){
     echo 'Drawing a shape';
@@ -64,7 +62,7 @@ function drawShape(Shape $myshape){
 }
 
 
-//ABSTRACTION
+echo '------ABSTRACTION------';
 abstract class Animal(){
   protected $animalName;
 
