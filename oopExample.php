@@ -75,19 +75,22 @@ abstract class Animal(){
   abstract public fucntion makeSound2();
 }
 
-class Dog extends Animal{
+class Dog2 extends Animal{
   public function makeSound2(){
     echo $this->animalName ' Make this sound Bark';
   }
 }
 
-class Cat extends Animal{
+class Cat2 extends Animal{
   public function makeSound2(){
-    return 'Meow';
+    echo $this->animalName ' Make this sound Meow';
   }
 }
-$mydog=new Dog('Princess');
-echo 'My dog '.$mydog->name.' does not like '. $mydog->makesound();
+$mydog=new Dog2('Princess');
+echo $mydog->makesound2();
+
+$mycat=new Cat2('Minino');
+echo $mycat->makesound2();
 
 
 
