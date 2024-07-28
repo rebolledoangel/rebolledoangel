@@ -36,7 +36,7 @@ class Dog extends Animal{
 }
 
 $mydog=new Dog('Princess');
-$mydog->makesound(). $mydog->dogName;
+$mydog->dogName(). $mydog->makesound;
 
 echo '------POLYMORPHISM------';
 class Shape{
